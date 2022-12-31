@@ -1,0 +1,54 @@
+.ukwiauL,
+.ukwiauR {
+  height: 70vh;
+}
+
+.ukwiauL {
+  position: relative;
+  left: 1.3vw;
+  top: 3vh;
+}
+
+.ukwiauR {
+  position: relative;
+  left: -1.3vw;
+  top: 3vh;
+}
+
+.jellyContainer {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box {
+  width: 50vw;
+  height: 50vh;
+  background: rgba(173, 198, 255, 0.304);
+  border: 3vw solid rgb(29, 195, 159);
+  color: rgb(92, 244, 211);
+  border-radius: 7%;
+
+  text-align: center;
+  & > input {
+    border: 0.3vw solid rgb(29, 195, 159);
+    border-radius: 50px;
+    padding: 0.6vw 5vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vw;
+    margin: 1vw;
+  }
+}
+.operationButton {
+  background-color: rgb(29, 195, 159);
+  border-color: rgb(125, 228, 206);
+  color: rgb(139, 234, 213);
+  margin: 1vw;
+  padding: 1vw;
+  font-size: 1vw;
+  font-weight: bold;
+  border-radius: 0.2vw;
+}
