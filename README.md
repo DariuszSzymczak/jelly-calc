@@ -11,6 +11,7 @@ Aktualnie w trakcie rozbudowy o nowe funkcje oraz zmiany estatyczne
   -obsługa widoczności nadmiaru wyników w tabelce
 - fix błędu wysyłki do kolekcji błędnych wyników obliczeń
 - wymiary responsywne "vw" do buttonów w menu
+- blokada przed nadmiernym klikaniem w przycisk = 
 
 ## rzeczy w kolejce do zaprogramowania
 
