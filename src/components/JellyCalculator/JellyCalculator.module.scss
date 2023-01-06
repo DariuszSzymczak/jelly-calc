@@ -25,7 +25,7 @@
 
 .box {
   width: 50vw;
-  height: 50vh;
+  min-height: 50vh;
   background: rgba(173, 198, 255, 0.304);
   border: 3vw solid rgb(29, 195, 159);
   color: rgb(92, 244, 211);
