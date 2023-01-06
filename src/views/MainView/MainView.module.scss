@@ -1,0 +1,26 @@
+.box {
+  width: 50vw;
+  min-height: 50vh;
+  background: rgba(173, 198, 255, 0.304);
+  border: 3vw solid rgb(29, 195, 159);
+  border-radius: 7%;
+  color: rgb(139, 234, 213);
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+  & > tr > td,
+  & > tr > th {
+    width: 50%;
+    text-align: center;
+  }
+
+  & > tr > td {
+    background-color: rgb(29, 195, 159);
+    color: white;
+    padding: 15px 2px;
+    width: 50%;
+  }
+}

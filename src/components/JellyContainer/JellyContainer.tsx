@@ -1,13 +1,21 @@
-import { Calculator } from "@/utils/calculator";
-import { useState, useEffect } from "react";
-import JellyCalculator from "../JellyCalculator/JellyCalculator";
+import Header from "../Header/Header";
 import styles from "./JellyContainer.module.scss";
-export const JellyContainer: React.VoidFunctionComponent = () => {
+
+type Props = {
+  children: JSX.Element;
+};
+
+export const JellyContainer: React.VoidFunctionComponent<Props> = ({
+  children,
+}) => {
   return (
-    <div className={styles.jellyContainer}>
-      <img src="/assets/ukwiauL.svg" className={styles.ukwiauL} />
-      <JellyCalculator />
-      <img src="/assets/ukwiauR.svg" className={styles.ukwiauR} />
+    <div className={styles.outerBox}>
+      <Header />
+      <div className={styles.jellyContainer}>
+        <img src="/assets/plantL.svg" className={styles.plantL} />
+        {children}
+        <img src="/assets/plantR.svg" className={styles.plantR} />
+      </div>
     </div>
   );
 };

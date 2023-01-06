@@ -3,6 +3,7 @@ import "./App.css";
 import { router } from "./router";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBR-7nYiKbzuHeITL89ogHv0cZuZw_5_Xs",
@@ -15,6 +16,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+export const db = getFirestore(app);
 
 function App() {
   return (

@@ -1,15 +1,15 @@
-.ukwiauL,
-.ukwiauR {
+.plantL,
+.plantR {
   height: 70vh;
 }
 
-.ukwiauL {
+.plantL {
   position: relative;
   left: 1.3vw;
   top: 3vh;
 }
 
-.ukwiauR {
+.plantR {
   position: relative;
   left: -1.3vw;
   top: 3vh;
@@ -34,12 +34,15 @@
   text-align: center;
   & > input {
     border: 0.3vw solid rgb(29, 195, 159);
-    border-radius: 50px;
+    border-radius: 10vw;
     padding: 0.6vw 5vw;
     font-weight: bold;
     text-align: center;
     padding: 1vw;
     margin: 1vw;
+    width: 15vw;
+    height: 1vw;
+    font-size: 1vw;
   }
 }
 .operationButton {
@@ -50,5 +53,52 @@
   padding: 1vw;
   font-size: 1vw;
   font-weight: bold;
-  border-radius: 0.2vw;
+  border-radius: 0.4vw;
+  border-width: 0.5vw;
+
+  &:hover {
+    background-color: rgb(16, 101, 83);
+  }
+}
+
+.activeButton {
+  background-color: rgb(16, 101, 83);
+  animation: pulse 2s linear 0s infinite normal forwards;
+}
+
+.lockedButton {
+  background-color: gray;
+}
+
+h1,
+h2 {
+  font-size: 2vw;
+}
+
+@keyframes pulse {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
 }

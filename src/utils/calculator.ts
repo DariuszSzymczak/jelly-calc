@@ -4,18 +4,18 @@ export class Calculator {
   b: number = 0;
 
   add() {
-    this.result = this.a + this.b;
+    return this.a + this.b;
   }
 
   substract() {
-    this.result = this.a - this.b;
+    return this.a - this.b;
   }
 
   divide() {
-    this.result = this.a / this.b;
+    return this.a / this.b;
   }
 
   multiplication() {
-    this.result = this.a * this.b;
+    return this.a * this.b;
   }
 }

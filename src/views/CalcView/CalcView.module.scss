@@ -1,0 +1,13 @@
+table {
+  margin: auto;
+  & > tr > td,
+  & > tr > th {
+    width: 150px;
+    text-align: center;
+  }
+
+  & > tr > td {
+    background-color: $lightGreen;
+    padding: 15px 2px;
+  }
+}
